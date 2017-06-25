@@ -11,9 +11,7 @@ namespace Fiver.Mvc.Layout
         public Startup(
             IHostingEnvironment env,
             ILoggerFactory loggerFactory)
-        {
-
-        }
+        { }
 
         public void ConfigureServices(
             IServiceCollection services)
@@ -27,7 +25,6 @@ namespace Fiver.Mvc.Layout
             IHostingEnvironment env,
             ILoggerFactory loggerFactory)
         {
-            app.UseDeveloperExceptionPage();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
