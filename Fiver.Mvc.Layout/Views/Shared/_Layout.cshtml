@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <h1>I'm in Layout page</h1>
+        @RenderBody()
+        @RenderSection("footer", required: false)
+        @if (IsSectionDefined("links"))
+        {
+            @RenderSection("links", required: false)
+        }
+        else
+        {
+            <em>No social media links supplied</em>
+        }
+    </div>
+</body>
+</html>
