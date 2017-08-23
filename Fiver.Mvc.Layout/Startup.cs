@@ -8,11 +8,6 @@ namespace Fiver.Mvc.Layout
 {
     public class Startup
     {
-        public Startup(
-            IHostingEnvironment env,
-            ILoggerFactory loggerFactory)
-        { }
-
         public void ConfigureServices(
             IServiceCollection services)
         {
@@ -22,8 +17,7 @@ namespace Fiver.Mvc.Layout
 
         public void Configure(
             IApplicationBuilder app,
-            IHostingEnvironment env,
-            ILoggerFactory loggerFactory)
+            IHostingEnvironment env)
         {
             app.UseMvc(routes =>
             {
